@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--<ImageView android:id="@+id/btn_login"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/propic"
+
+            />-->
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:src="@drawable/propic"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:id="@+id/user_nav_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/txt_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/notavail"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/notavail"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparet_grey" />
+
+
+    <!-- <ListView
+         android:id="@+id/lstTop"
+         android:layout_width="match_parent"
+         android:layout_height="115dp"
+         android:dividerHeight="1dp"
+         android:gravity="center_vertical">
+
+     </ListView>
+
+     <ListView
+         android:id="@+id/lst2Top"
+         android:layout_width="match_parent"
+         android:layout_height="115dp"
+         android:layout_marginTop="4.5dp"
+         android:dividerHeight="1dp"
+         android:gravity="center_vertical">
+
+     </ListView>
+
+     <ListView
+         android:id="@+id/lstMiddle"
+         android:layout_width="match_parent"
+         android:layout_height="75dp"
+         android:layout_marginTop="3.5dp"
+         android:dividerHeight="1dp"
+         android:gravity="center_vertical"></ListView>
+
+     <ListView
+         android:id="@+id/lstBottom"
+         android:layout_width="match_parent"
+         android:layout_height="155dp"
+         android:layout_marginTop="2.5dp"
+         android:dividerHeight="1dp"
+         android:gravity="center_vertical"></ListView>
+-->
+    <TextView
+        android:id="@+id/find_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/add"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/AddPlayer"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparet_grey" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/about"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/about"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparet_grey" />
+
+    <TextView
+        android:id="@+id/cus_supt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/customer_support"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/customer_support"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparet_grey" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/logout"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/logout"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparet_grey" />
+
+</LinearLayout>

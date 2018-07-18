@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/favorite_badge_layout"
+    android:layout_width="?android:actionBarSize"
+    android:layout_height="match_parent"
+    android:paddingRight="4dp"
+    android:paddingEnd="4dp"
+    android:clickable="true"
+    android:background="@drawable/button_badge">
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/ic_favorite_white"
+        android:padding="8dp"
+        />
+    <TextView
+        android:id="@+id/txt_favorite_badge"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/button_black_round"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:layout_marginTop="6dp"
+        android:includeFontPadding="false"
+        android:minWidth="22dp"
+        android:padding="1dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:lines="1"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="99"
+        android:visibility="invisible"
+        />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lyt_online"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2.05"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_frendlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="#6279ec"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="Friends"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".05"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_frendonline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#00a7e5"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:text="Online"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="4dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none"
+        android:layout_weight="1.3"
+        android:id="@+id/list_frend"/>
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHAT..."
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>-->
+
+</LinearLayout>

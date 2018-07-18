@@ -1,0 +1,290 @@
+<resources>
+    <string name="app_name">Spulla</string>
+    <string name="edit"><u>Edit</u></string>
+    <!--<string name="facebook_app_id">1802340360007661</string>-->
+    <string name="facebook_app_id">158577518057443</string>
+    <string name="fb_login_protocol_scheme">fb158577518057443</string>
+    <string name="rs">\u20A8</string>
+    <string name="Rs">\u20B9</string>
+    <string name="btn_size">Choose Size</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+
+
+    <!-- Register Page-->
+    <string name="s_individual">INDIVIDUAL OR TEAM NAME</string>
+    <string name="s_contact">CONTACT</string>
+    <string name="s_email">EMAIL</string>
+    <string name="s_dob">DATE OF BIRTH</string>
+    <string name="s_state">STATE</string>
+    <string name="s_city">CITY</string>
+    <string name="s_area">AREA</string>
+    <string name="s_category">CATEGORY</string>
+    <string name="s_pass">PASSWORD</string>
+    <string name="s_male">MALE</string>
+    <string name="s_female">FEMALE</string>
+    <string name="s_choose">CHOOSE SPORTS &amp; RATE YOURSELF</string>
+    <string name="s_expert">EXPERT</string>
+    <string name="s_advanced">ADVANCED</string>
+    <string name="s_intermediate">INTERMEDIATE</string>
+    <string name="s_beginner">BEGINNER</string>
+
+    <!-- Upgrade page-->
+    <string name="s_swipe">Swipe to edit basic profile</string>
+    <string name="s_upgrade">UPGRADE.....</string>
+    <string name="s_uploadpic">Upload Profile Picture</string>
+    <string name="s_upload">Upload</string>
+    <string name="s_school">SCHOOL</string>
+    <string name="s_college">COLLEGE</string>
+    <string name="s_w_place">WORK PLACE</string>
+    <string name="s_area_1">ENTER PREFERRED PLAYING AREA # 1</string>
+    <string name="s_area_2">ENTER PREFERRED PLAYING AREA # 2</string>
+    <string name="s_area_3">ENTER PREFERRED PLAYING AREA # 3</string>
+    <string name="s_btn_upgrade">UPGRADE</string>
+
+    <!--Front page-->
+    <string name="s_newplayer"><u>New Player</u></string>
+    <string name="s_login"><u>Login</u></string>
+    <string name="s_challenge">Challenge</string>
+    <string name="s_zone">Zone</string>
+    <string name="s_tournament">Tournament</string>
+    <string name="s_shop">Sport Shop</string>
+    <string name="s_camera">Camera</string>
+    <string name="s_live">Live</string>
+    <string name="s_timepass">Time Pass</string>
+    <string name="s_sportopedia">Sportopedia</string>
+    <string name="s_score">Score</string>
+    <string name="s_ticket">Tickets</string>
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
+    <string name="live_score">LIVE SCORES</string>
+    <string name="gossip">Sportopedia</string>
+    <string name="facts">Fitness Mantra</string>
+    <string name="coach">Coaching</string>
+    <string name="findplayer">Nearby Players</string>
+    <string name="submit">Submit</string>
+    <string name="find">Find</string>
+    <string name="notavail">Not Available</string>
+    <string name="joinme">Join Me</string>
+    <string name="coach_des">Born in Unley, South Australia,
+        Chappell was the second of three sons born in Adelaide to Martin and Jeanne (née Richardson),
+        a Cornish Australian family.He was steeped in the game from a very early age: his father Martin was
+        a noted grade cricketer in Adelaide who put a bat in his hands as soon as he could walk,
+        while his maternal
+        grandfather was the famous all-round sportsman Victor Richardson, who captained Australia
+        at the end of a nineteen-Test career</string>
+    <string name="book_now">Book Now</string>
+    <string name="cancel">Cancel</string>
+    <string name="view_more_cmt">View more comments</string>
+    <string name="write_comment">Write a comment...</string>
+    <string name="people_reac">People who commented</string>
+    <string name="join_tournament">Join Tournament</string>
+    <string name="join_coach">Join Coach</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="location">Location</string>
+    <string name="schedule">Schedule</string>
+    <string name="program">Program</string>
+    <string name="loading">Loading…</string>
+    <string name="logout">Logout</string>
+    <string name="facebook">Facebook</string>
+    <string name="Google">Google</string>
+    <string name="vennue">Vennue</string>
+    <string name="about">About</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="gps_enabled">Gps Enable</string>
+    <string name="gps_not_enabled">Gps not enabled</string>
+    <string name="for_all">Please select</string>
+    <string name="empty_msg">This field not be blank</string>
+    <string name="AddPlayer">Add Player Profile</string>
+    <string name="Add_Comments">Add Comment...</string>
+    <string name="matchdetails">Click to Show Match Schedules</string>
+    <string name="comments">Comments</string>
+    <string name="view_more">View more</string>
+    <string name="shoping">Shopping</string>
+    <string name="tournament_details">Tournament Details</string>
+    <string name="resend">Resnd Otp</string>
+    <string name="verify">Verify</string>
+    <!--info -->
+    <string name="player_info">All field is optional</string>
+
+    <string name="coach_info">Select filters to locate the ideal sports coach in your area,
+        check  his/her video for a sports tip, if you like him/her then join his/her coaching classes
+        at discounted rates. Pay full amount or booking amount and the rest can be paid at  the time of the class.</string>
+    <!--<string name="fact_info">Learn about some amazing facts in sports. Just click on a sport  from the dropdown box-->
+        <!--and go through our sportopedia of sports facts.</string>-->
+    <string name="fact_info">Fitness Info: Stay toned and be in shape, Learn from  the experts.
+        Just keep swiping, watch videos, Learn tips and stay fit.</string>
+    <string name="fp_info">This feature allows you to look for a playing partner, click on the drop down button, select
+        filters and press submit and the feature will trace matching sports players in your area.
+        Send request  to them using () button, check their responses and challenges by clicking  on (Chat) button.
+        Decline irrelevant profiles by pressing the (X) button  and block users permanently using the () button.
+        Find a suitable player, Chat, Play and Socialize.</string>
+    <string name="gossip_info">Sports news is a fuel to a sport fanatic, go through the latest  news
+        and gossips related to sports</string>
+    <string name="score_info">Don’t have time to watch a sports match, don’t worry,
+        this feature will help you check live scores, just slide and check scores and keep  the excitement on.</string>
+    <string name="shop_info">This will let you shop new products, old products, and take sports products on rent.</string>
+    <string name="tour_info">This feature traces tournaments in your area. Look at the  tournament schedule, participate by paying the partial booking fee or full  fee. Play real tournaments, test your skills, earn trophies and rewards</string>
+    <string name="optional_info">Optional.</string>
+    <string name="complaint">Complaint</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="ptn_with">Partner with us</string>
+    <string name="join_team">Join the team</string>
+    <string name="empanel_with">Empanel with us</string>
+    <string name="please_enter">Please Enter</string>
+    <string name="hot_deal">Hot Deal</string>
+
+    <!---->
+
+    <string-array name="choose_sports">
+        <item>Cricket</item>
+        <item>Football</item>
+    </string-array>
+    <string-array name="choose_sports_coaching">
+        <item>Cricket</item>
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Lang Tennis</item>
+        <item>Table Tennis</item>
+        <item>Badminton</item>
+        <item>Hockey</item>
+        <item>Basketball</item>
+        <item>Swimming</item>
+        <item>Skating</item>
+        <item>Ice Skating</item>
+        <item>Shooting</item>
+        <item>Climbing</item>
+        <item>River Rafting</item>
+        <item>Golf</item>
+        <item>Gymnastics</item>
+        <item>Kabbadi</item>
+        <item>Chess</item>
+        <item>MMA</item>
+        <item>Wrestling</item>
+        <item>Taekwondo</item>
+        <item>Yoga</item>
+        <item>Power Yoga</item>
+        <item>Aerobics</item>
+        <item>Zumba</item>
+        <item>Through Ball </item>
+        <item>Foosball </item>
+        <item>kho kho</item>
+        <item>Athletic</item>
+        <item>Gym</item>
+
+    </string-array>
+
+   <!-- <string-array name="play_as_array">
+    <item>Click below</item>
+    <item>Individual</item>
+    <item>Doubles</item>
+    <item>Corporates</item>
+    <item>School</item>
+    <item>College</item>
+    <item>Clubs</item>
+    <item>Localites</item>-->
+
+    <string-array name="play_as_array">
+        <!--<item>Click below</item>-->
+        <item>Individual</item>
+        <item>Doubles</item>
+
+    </string-array>
+
+    <string-array name="spaorts_interest_array">
+       <!-- <item>Select expertise</item>-->
+        <item>Not Mention </item>
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+        <item>Expert</item>
+    </string-array>
+
+
+
+    <string-array name="choose_sports_gossip">
+        <item>Cricket</item>
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Tennis</item>
+        <item>Table Tennis</item>
+        <item>Chess</item>
+        <item>Sports Divas</item>
+        <item>Swimming</item>
+        <item>Badminton</item>
+        <item>Volley ball</item>
+        <item>Wrestling</item>
+        <item>WWE</item>
+        <item>Golf</item>
+        <item>Shooting</item>
+
+    </string-array>
+    <string-array name="coach_age_grp">
+        <item>(5-10)</item>
+        <item>(11-15)</item>
+        <item>(16-20)</item>
+        <item>(21-25)</item>
+        <item>(26-30)</item>
+        <item>(31-35)</item>
+    </string-array>
+    <string-array name="gender">
+        <item>All</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_shop_item_details">ShopItemDetailsActivity</string>
+    <string name="selling_price">Selling Price</string>
+    <string name="rating_product">Give Rating</string>
+    <string name="seller_info">Seller Inforamaton</string>
+    <string name="specification">Specifications</string>
+    <string name="type">type</string>
+    <string name="color">Color</string>
+    <string name="action_shop_title_shop">Shop</string>
+    <string name="action_shop_title_wish">Wish List</string>
+    <string name="type_msg">Type a message</string>
+    <string name="unlike">Unliked</string>
+    <string name="like">Like</string>
+    <string name="twitter_consumer_key">0qAD4xAdvdLEVeTg5a6qS4OJi</string>
+    <string name="twitter_consumer_secret">eBVCo4D9wxBpa03vw1JbCxYClCNC69eeZeuXPCvnLRmKaBd85P</string>
+    <string name="twitter_callback"></string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    <string name="hello">hello</string>
+    <string name="login_instructions">login instruction</string>
+    <string name="btn_login">Twitter Login</string>
+    <string name="share_instructions">Share Instruction</string>
+    <string name="btn_share">Share</string>
+    <string name="crop">Crop</string>
+    <string name="amount_payable">Amount Payable</string>
+    <string name="cotinue">Continue</string>
+    <string name="Change_Address">Edit Address</string>
+    <string name="ph_num">Phone Number *</string>
+    <string name="Enter_name">Enter Name</string>
+    <string name="enter_no">Enter phone number</string>
+    <string name="pincode">Pin Code *</string>
+    <string name="city">City *</string>
+    <string name="state">State *</string>
+    <string name="address">Address *</string>
+    <string name="save">save</string>
+    <string name="remove">Remove from cart</string>
+    <string name="payment">Payment</string>
+    <string name="sports1">Sport 1</string>
+    <string name="sports2">Sport 2</string>
+    <string name="sports3">Sport 3</string>
+    <string name="click_below">Click below</string>
+    <!--<string name="select_expertise">Select expertise</string>-->
+    <string name="select_expertise">Not Mention</string>
+    <string name="alt_ph_num">Alternate Phone Number</string>
+    <string name="lnd_mark">Land Mark</string>
+
+    <!--<!-coach details-&ndash;&gt;-->
+    <string name="Achievement"><b>Achievement: </b></string>
+    <string name="Speciality"><b>Speciality: </b></string>
+    <string name="Terminology"><b>Terminology: </b></string>
+    <string name="search_help">Search Players</string>
+    <string name="see_all">See All</string>
+
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.riseintech.spulla">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.riseintech.spulla.helper.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity android:name="com.riseintech.spulla.SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/facebook_app_id" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.riseintech.spulla.MainActivity"
+            android:label=""
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.riseintech.suplla.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.riseintech.spulla.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.riseintech.spulla.UpgradeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.riseintech.spulla.BaseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.riseintech.spulla.FindPlayer"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.riseintech.spulla.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.riseintech.spulla.CochScheduleActivity"  android:screenOrientation="portrait" />
+        <activity android:name="com.riseintech.spulla.GossipActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.riseintech.spulla.TournamentDetailsActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.riseintech.spulla.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.riseintech.spulla.FactDetailsActivity" android:screenOrientation="portrait" />
+        <activity
+            android:name="com.riseintech.spulla.BookCoach"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.riseintech.spulla.OtpActivity"
+            android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait" />
+        <activity
+            android:name="com.riseintech.spulla.FindPlayerDetailsActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.riseintech.spulla.VideoViewActivity" android:screenOrientation="portrait" />
+        <activity
+            android:name="com.riseintech.spulla.MatchDetailActivity"
+            android:label="Match Details" android:screenOrientation="portrait"/>
+
+        <!--<provider-->
+            <!--android:name="com.facebook.FacebookContentProvider"-->
+            <!--android:authorities="com.facebook.app.FacebookContentProvider"-->
+            <!--android:exported="true" />-->
+
+        <activity
+            android:name="com.riseintech.spulla.ShopingDetailsActivity"
+            android:label="" />
+        <activity android:name="com.riseintech.spulla.CustomerSupportActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.riseintech.spulla.ShopItemDetailsActivity"
+            android:label="@string/title_activity_shop_item_details"
+            android:theme="@style/AppTheme" android:screenOrientation="portrait"/>
+        <activity android:name="com.riseintech.spulla.ZoomPhoto" />
+        <activity android:name="com.riseintech.spulla.BuyNow" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.riseintech.spulla.SRatingReview"
+            android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.riseintech.spulla.ChatDetailsActivity"
+            android:label="" android:screenOrientation="portrait"/>
+        <!-- GCM Registration Intent Service -->
+        <service
+            android:name="com.riseintech.spulla.gcm.GCMRegistrationIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service android:name="com.riseintech.spulla.gcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.riseintech.spulla.gcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.riseintech.spulla.ChatStartActivity"
+            android:label="" />
+        <activity android:name="com.riseintech.spulla.PlayerutubeActivity" android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cfb6ae7ad82808218b74a093994e56b1bdee0a60" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.riseintech.spulla.AddDelivAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.riseintech.spulla.AddtoCartDetails" android:screenOrientation="portrait"/>
+        <activity android:name="com.riseintech.spulla.MakePaymentActivity" android:screenOrientation="portrait"></activity>
+
+    </application>
+
+</manifest>

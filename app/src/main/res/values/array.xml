@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string-array name="sports_list">
+        <item>" "</item>
+        <item>Badminton</item>
+        <item>Cricket</item>
+        <item>Snooker</item>
+        <item>Squash</item>
+        <item>Tennis</item>
+    </string-array>
+
+    <string-array name="size_text">
+        <item>S (SMALL)</item>
+        <item>M (MEDIUM)</item>
+        <item>L (LARGE)</item>
+        <item>XL (EXTRA LARGE)</item>
+    </string-array>
+
+    <string-array name="size_key">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+    </string-array>
+
+    <string-array name="quantities">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+
+</resources>

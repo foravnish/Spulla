@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_otp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.riseintech.spulla.OtpActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="Enter OTP"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/mob_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edt_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/otp_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter 4 digit Otp"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:translationY="5dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/white"
+            />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/otp_sub"
+        android:layout_below="@id/mob_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorPrimary"
+        android:padding="8dp"
+        android:text="@string/verify"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/resend_otp"
+        android:layout_below="@+id/otp_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resend"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

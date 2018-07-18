@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.riseintech.spulla.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:transitionName="actionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <ImageButton
+            android:id="@+id/buttonimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:background="@drawable/menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/rForm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="#E65474A5"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/gossip_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="10dp"
+                            android:src="@drawable/blackmenu" />
+
+
+                        <TextView
+                            android:id="@+id/gossip_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/gossip"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/gossip_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="10dp"
+                            android:src="@drawable/information" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/gossip_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:overScrollMode="never"
+                        tools:context=".MainActivity" />
+
+                    <!-- <ImageView
+                        android:id="@+id/gossip_left1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:layout_gravity="left|center_vertical"
+                        android:paddingRight="15dp"
+                        android:src="@drawable/left" />-->
+                    <ImageView
+                        android:id="@+id/gossip_left1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/left" />
+
+                    <ImageView
+                        android:id="@+id/gossip_right1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|top"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#E65474A5"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/facts_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="10dp"
+                            android:src="@drawable/blackmenu" />
+
+
+                        <TextView
+                            android:id="@+id/facts_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/facts"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/facts_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="10dp"
+                            android:src="@drawable/information" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/facts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:overScrollMode="never"
+                        tools:context=".MainActivity" />
+
+                    <ImageView
+                        android:id="@+id/fact_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/left" />
+
+                    <ImageView
+                        android:id="@+id/facts_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+
+
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#E65474A5"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/coaching_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="10dp"
+                            android:src="@drawable/blackmenu" />
+
+
+                        <TextView
+                            android:id="@+id/coaching_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/coach"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/coach_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="10dp"
+                            android:src="@drawable/information" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/coaching"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:overScrollMode="never"
+                        tools:context=".MainActivity" />
+
+                    <ImageView
+                        android:id="@+id/coach_left1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/left" />
+
+                    <ImageView
+                        android:id="@+id/coach_right1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+
+
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="#E65474A5"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/find_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="10dp"
+                            android:src="@drawable/blackmenu" />
+
+
+                        <TextView
+                            android:id="@+id/find_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/findplayer"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/fp_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="10dp"
+                            android:src="@drawable/information" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fp_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/left" />
+
+                    <ImageView
+                        android:id="@+id/fp_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/findplayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:overScrollMode="never"
+                        tools:context=".MainActivity" />
+
+
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="#E65474A5"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/shopping_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="10dp"
+                            android:src="@drawable/blackmenu" />
+
+
+                        <TextView
+                            android:id="@+id/shopping_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/shoping"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/shop_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="10dp"
+                            android:src="@drawable/information" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/shopping"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:overScrollMode="never"
+                        android:visibility="visible"
+                        tools:context=".MainActivity" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/shoping_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+                    <ImageView
+                        android:id="@+id/shop_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/left" />
+
+                    <ImageView
+                        android:id="@+id/shop_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="#E65474A5"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tournament_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="10dp"
+                            android:src="@drawable/blackmenu" />
+
+
+                        <TextView
+                            android:id="@+id/tournament_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/s_tournament"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/tour_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="10dp"
+                            android:src="@drawable/information" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/tournamentpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:overScrollMode="never"
+                        tools:context=".MainActivity" />
+
+                    <ImageView
+                        android:id="@+id/tourn_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/left" />
+
+                    <ImageView
+                        android:id="@+id/tourn_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="center"
+                        android:src="@drawable/right_arrow" />
+
+
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- <android.support.v7.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         app:cardBackgroundColor="@android:color/transparent"
+         app:cardCornerRadius="0dp"
+         app:cardElevation="8dp">-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        tools:context=".MainActivity" />
+    <!--</android.support.v7.widget.CardView>-->
+</LinearLayout>

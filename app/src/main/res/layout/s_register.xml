@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorRegisterPage"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_register"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:transitionName="actionBar"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="2dp"
+            app:cardBackgroundColor="#e6a0b2ca"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="USER NAME"
+                    android:padding="6dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/register_edit_txt_bg"
+                    android:textColorHint="@color/colorRegisterPage"
+                    android:ems="10"
+                    android:id="@+id/s_name"
+                    android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/s_email"
+                android:padding="6dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:background="@drawable/register_edit_txt_bg"
+                android:textColorHint="@color/colorRegisterPage"
+                android:ems="10"
+                android:layout_marginTop="8dp"
+                android:id="@+id/s_email"
+                android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:hint="@string/s_pass"
+                    android:textColor="@android:color/white"
+                    android:padding="6dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/register_edit_txt_bg"
+                    android:textColorHint="@color/colorRegisterPage"
+                    android:ems="10"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/s_pass"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:hint="CONFIRM PASSWORD"
+                    android:padding="6dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/register_edit_txt_bg"
+                    android:textColorHint="@color/colorRegisterPage"
+                    android:ems="10"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/s_cpass"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="MOBILE NUMBER"
+                    android:padding="6dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/register_edit_txt_bg"
+                    android:textColorHint="@color/colorRegisterPage"
+                    android:ems="10"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/s_contact"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/s_btnRegister"
+                    android:layout_width="130dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="Register"/>
+
+            </LinearLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

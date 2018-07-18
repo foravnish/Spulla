@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.riseintech.spulla.utils.SortCheckableRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<com.riseintech.spulla.utils.SingleListCheckBox
+	    android:id="@+id/singleitemCheckBox"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+		android:layout_centerInParent="true"
+		android:focusable="false"  />
+			
+</com.riseintech.spulla.utils.SortCheckableRelativeLayout>

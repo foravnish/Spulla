@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/schd_dts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/sh_date1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Starting Date :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".0"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/sh_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/notavail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="End Date:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/shd_edate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/notavail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/ch_gend1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Coaching/Camp for :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/ch_gend"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/notavail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/ch_aggrp1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Age :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/ch_aggrp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/notavail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="textCapWords"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/blacklinewhite_bg"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/day_lin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                >
+
+                    <TextView
+                        android:id="@+id/days1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Days"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/time_lin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                   >
+
+                    <TextView
+                        android:id="@+id/ch_time1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Times"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/sh_loc1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:text="Location :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/sh_loc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:text="@string/notavail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="textCapWords"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/shd_fes1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Fees :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/shd_fes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/notavail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/shd_pgm1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="After Discount :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/shd_pgm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/notavail"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bkamt_lin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/book_amut1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Booking Amount:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/book_amut"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/notavail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pay_lin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/pay_book_amt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/rounded_btn_blue"
+                    android:gravity="center"
+                    android:text="Pay Booking Amount"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/pay_full_amt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/rounded_btn_blue"
+                    android:gravity="center"
+                    android:text="Pay Full Amount"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_btn_blue"
+                android:gravity="center"
+                android:text="Join Now"
+                android:textAllCaps="false"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

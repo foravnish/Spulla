@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_tournmt"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:transitionName="actionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_tournmt"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/tourn_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/t_ImageView"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/tournament" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".10" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.9"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tn_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/notavail"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/loc_tou"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingTop="5dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:typeface="serif" />
+
+                        <Button
+                            android:id="@+id/join_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/d_blue"
+                            android:drawableLeft="@drawable/addicon"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/join_tournament"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingRight="5dp"
+                            android:text="prize money"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/e_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/sch_yr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/sch_mnth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp">
+
+                        <TextView
+                            android:id="@+id/std_nm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/st_add"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/t_img1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tournament" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".10" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/t_name1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/notavail"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/t_loc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="@string/notavail"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/live_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:src="@drawable/grey_left" />
+
+                <ImageView
+                    android:id="@+id/live_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:src="@drawable/grey_right" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/ch_des_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/desc_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/desc_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tou_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/abt_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/abt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tou_abt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/macth_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_btn_blue"
+                android:gravity="center"
+                android:text="@string/matchdetails"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/schd_dts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/tournament_details"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sh_date1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Starting Date: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="End Date :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Tournament Type: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/shd_pgm1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="No. of teams: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/days1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Prize Money: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/ch_time1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Sport: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/ch_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Address: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/sh_loc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Location: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/sh_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="City: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/sh_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="State: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/ch_aggrp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Age Group: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/ch_gend1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Gender :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/shd_fes1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Entry Fees: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/book_amut1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Booking Amount: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+
+                    <!-- <Button
+                         android:id="@+id/book"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginRight="10dp"
+                         android:layout_marginTop="20dp"
+                         android:layout_weight=".7"
+                         android:background="@color/d_blue"
+                         android:paddingRight="20dp"
+                         android:paddingLeft="20dp"
+                         android:gravity="center"
+                         android:text="@string/book_now"
+                         android:textAllCaps="false"
+                         android:textColor="@color/white"
+                         android:textSize="16sp" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sh_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Starting Date :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Starting Date :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/t_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Tournament type is"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/team_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="@string/notavail"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/pz_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="@string/notavail"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/sports"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Time :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/sadd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Address :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/sh_loc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingTop="5dp"
+                        android:text="Location :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/s_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingTop="5dp"
+                        android:text="city :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/s_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingTop="5dp"
+                        android:text="state :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/ch_aggrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Age :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/ch_gend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Gender :"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/shd_fes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Fees :"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/book_amut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5dp"
+                        android:text="Initial amount:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:text="Pay:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif"
+                    android:visibility="visible" />
+
+                <RadioGroup
+                    android:id="@+id/pay_typerg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.65"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RadioButton
+                        android:id="@+id/ef_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entry Fees" />
+
+                    <RadioButton
+                        android:id="@+id/ff_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="4dp"
+                        android:text="Booking Amount" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pay_lin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/pay_book_amt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_btn_blue"
+                    android:gravity="center"
+                    android:text="Pay Booking Amount"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/pay_full_amt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_btn_blue"
+                    android:gravity="center"
+                    android:text="Pay Entry Fees"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_btn_blue"
+                android:gravity="center"
+                android:text="Join Now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

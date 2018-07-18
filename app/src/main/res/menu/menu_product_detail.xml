@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:id="@+id/action_search"
+        android:title="Search"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item android:id="@+id/favorite_badge_notification"
+        android:title="@string/action_shop_title_wish"
+        android:orderInCategory="2"
+        app:showAsAction="always" />-->
+
+    <item android:id="@+id/cart_badge_notification"
+        android:title="@string/action_shop_title_shop"
+        android:orderInCategory="3"
+        app:showAsAction="always"/>
+</menu>

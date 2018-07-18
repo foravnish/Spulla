@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_deliv_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.riseintech.spulla.AddDelivAddressActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:transitionName="actionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/sGroup_addt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/add_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Work" />
+
+            <RadioButton
+                android:id="@+id/add_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:text="Home" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Name *"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/delv_add_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.1"
+                android:background="@drawable/register_edit_txt_bg"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/ph_num"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/delv_add_phn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.1"
+                android:background="@drawable/register_edit_txt_bg"
+                android:ems="10"
+                android:maxLength="11"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorRedittxt"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/alt_ph_num"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/delv_altnt_add_phn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.1"
+                android:background="@drawable/register_edit_txt_bg"
+                android:ems="10"
+                android:maxLength="11"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColorHint="@color/colorRedittxt"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/pincode"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/delv_add_pnc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.1"
+                android:background="@drawable/register_edit_txt_bg"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="10dp"
+                android:textColorHint="@color/colorRedittxt"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/city"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/delv_add_cit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.1"
+                android:background="@drawable/register_edit_txt_bg"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="@color/colorRedittxt"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/state"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/delv_add_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.1"
+                android:background="@drawable/register_edit_txt_bg"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="@color/colorRedittxt"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/address"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/delv_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.1"
+                android:background="@drawable/register_edit_txt_bg"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="@color/colorRedittxt"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/lnd_mark"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/land_mark_edt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.1"
+                android:background="@drawable/register_edit_txt_bg"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="@color/colorRedittxt"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/save_Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

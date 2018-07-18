@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/transparet_grey">
+
+
+                <ImageView
+                    android:id="@+id/fact_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    android:src="@color/transparet_grey" />
+
+
+                <com.google.android.youtube.player.YouTubeThumbnailView
+                    android:id="@+id/thumbnailview"
+                    android:layout_above="@+id/bottmo_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:visibility="gone"
+                    />
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_media_play"
+                    android:id="@+id/play"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/gosip_hd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/notavail"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/like"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight=".5"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/heart"
+                    android:gravity="center"
+                    android:text=""
+                    android:padding="5dp"
+                    android:textColor="@color/colorRedt"
+                    android:textSize="12sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/unlike"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".35"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/heart"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/unlike"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gsp_date1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/notavail"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:typeface="serif" />
+
+
+            <TextView
+                android:id="@+id/gssp_dtls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:paddingRight="10dp"
+                android:text="@string/coach_des"
+                android:textColor="@color/colorRedt"
+                android:textSize="14sp"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/subtit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/notavail"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+                <ImageView
+                    android:id="@+id/whtsapp_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight=".32"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/whtsapp" />
+
+                <ImageView
+                    android:id="@+id/fb_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_weight=".28"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/fb" />
+
+                <ImageView
+                    android:id="@+id/twt_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_weight=".28"
+                    android:scaleType="center"
+                    android:src="@drawable/twiiter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_more_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/no_cmmts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.3"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Comments not Available"
+                    android:textColor="@color/transparet_grey"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/view_more"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="View more.."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/add_cmt"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/cmnt_p_ly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/cmt_img"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="top"
+                        android:layout_weight=".5"
+                        android:src="@drawable/profilepic" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".10" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="15dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/cn_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/notavail"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+
+                        <TextView
+                            android:id="@+id/cmtns_txv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/notavail"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/cmt_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingTop="2dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/transparet_grey"
+                            android:textSize="14sp"
+                            android:typeface="serif" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorRedittxt" />
+
+                <LinearLayout
+                    android:id="@+id/cmnt_p_ly1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/cmt_img1"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="top"
+                        android:layout_weight=".5"
+                        android:src="@drawable/profilepic" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".10" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="15dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/cn_name1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/notavail"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+
+                        <TextView
+                            android:id="@+id/cmtns_txv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/notavail"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/cmt_time1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingTop="2dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/transparet_grey"
+                            android:textSize="14sp"
+                            android:typeface="serif" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorRedittxt" />
+
+                <LinearLayout
+                    android:id="@+id/cmnt_p_ly2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/cmt_img2"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="top"
+                        android:layout_weight=".5"
+                        android:src="@drawable/profilepic" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".10" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="15dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/cn_name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/notavail"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+
+                        <TextView
+                            android:id="@+id/cmtns_txv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/notavail"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/cmt_time2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingTop="2dp"
+                            android:text="@string/notavail"
+                            android:textColor="@color/transparet_grey"
+                            android:textSize="14sp"
+                            android:typeface="serif" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_cmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/blacklinewhite_bg"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/cmts_hd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:editable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/Add_Comments"
+                    android:inputType="none"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <ImageView
+                    android:id="@+id/com_send"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight=".5"
+                    android:src="@drawable/sendicon"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

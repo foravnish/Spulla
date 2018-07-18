@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- <include
+         android:id="@+id/header"
+         layout="@layout/pagerheader" />-->
+
+    <TextView
+        android:id="@+id/txtFacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btm_hd"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text=" amit"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/btm_hd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent_light_blue"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+      <!--  <ImageView
+            android:id="@+id/facts_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="center"
+            android:src="@drawable/info"
+            android:text="For Coaching"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />-->
+        <TextView
+            android:id="@+id/facts_iconname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="For Coaching"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/fct_rm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="5dp"
+            android:text="Read More"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

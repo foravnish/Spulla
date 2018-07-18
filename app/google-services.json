@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "528395742761",
+    "firebase_url": "https://fir-spulla.firebaseio.com",
+    "project_id": "firebase-spulla",
+    "storage_bucket": "firebase-spulla.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528395742761:android:633277f7c2cc1630",
+        "android_client_info": {
+          "package_name": "com.riseintech.spulla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528395742761-a788ero2m9t00auu5islf2uo82imvl7a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.riseintech.spulla",
+            "certificate_hash": "3a9921496c43d65ff0f3b13a815a536d5f61dca9"
+          }
+        },
+        {
+          "client_id": "528395742761-4polk55vo4372p618aq7d9jkj4v71q1f.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "528395742761-0afeg6jef9or4olibss2oqkp12dkmufv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM1T3U3N0Z62DzVcqpgVHzRgUDse0NO-8"
+        },
+        {
+          "current_key": "AIzaSyAEYb0pkeDUxgnD-aGPBmKkwRO297Wpa3o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528395742761-4polk55vo4372p618aq7d9jkj4v71q1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
